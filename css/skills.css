@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #081b29;
+    color: #ededed;
+    line-height: 1.6;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #081b29;
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header .logo {
+    font-size: 25px;
+    font-weight: 600;
+    color: #00abf0;
+    text-decoration: none;
+}
+
+.navbar a {
+    margin: 0 15px;
+    color: #ededed;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00abf0;
+}
+
+.services {
+    margin-top: 100px;
+    padding: 0 10%;
+}
+
+.services h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #00abf0;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.service-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.service-item h2 {
+    font-size: 28px;
+    color: #ededed;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #cfcfcf;
+}
+
+.service-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00abf0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.service-item a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .header {
+        padding: 10px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    .services {
+        padding: 0 5%;
+    }
+
+    .service-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item img {
+        margin: 0 0 20px 0;
+    }
+
+    .service-item h2 {
+        font-size: 24px;
+    }
+
+    .service-item p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 5%;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .services h1 {
+        font-size: 32px;
+    }
+
+    .service-item h2 {
+        font-size: 22px;
+    }
+
+    .service-item p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header .logo {
+        font-size: 20px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .services {
+        padding: 0 5%;
+    }
+
+    .services h1 {
+        font-size: 28px;
+    }
+
+    .service-item h2 {
+        font-size: 20px;
+    }
+
+    .service-item p {
+        font-size: 10px;
+    }
+}

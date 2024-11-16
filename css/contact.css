@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #081b29;
+    color: #ededed;
+    line-height: 1.6;
+}
+
+.contact {
+    text-align: center;
+    padding: 50px 10%;
+}
+
+.contact h2 {
+    font-size: 32px;
+    color: #00abf0;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ededed;
+}
+
+.contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact ul li {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #ededed;
+    background-color: #0b2d3d;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.contact ul li:hover {
+    transform: scale(1.05);
+    background-color: #00abf0;
+    color: #081b29;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .contact {
+        padding: 40px 5%;
+    }
+
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .contact p, .contact ul li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 30px 5%;
+    }
+
+    .contact h2 {
+        font-size: 24px;
+    }
+
+    .contact p, .contact ul li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 20px 5%;
+    }
+
+    .contact h2 {
+        font-size: 20px;
+    }
+
+    .contact p, .contact ul li {
+        font-size: 12px;
+    }
+}
